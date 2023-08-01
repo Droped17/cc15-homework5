@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW2</title>
+    <style>
+        .card {
+            width: 200px;
+            height: 260px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid grey;
+            border-radius: 10px;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            box-shadow: 3px 1px 10px 0px;
+        }
+
+        .card::before {
+            content: "9";
+            position: absolute;
+            top: -10px;
+            right: -7%;
+            background-color: red;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 50%;
+            padding: 10px;
+            width: 18px;
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        .card::after{
+            content: "X";
+            position: absolute;
+            top: 3%;
+            left: 5%;
+        }
+
+        img {
+            border-bottom: 1px solid black;
+        }
+
+
+        h4 {
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <img src="https://www.svgrepo.com/show/429787/human-man-10.svg" alt="profile" />
+        <h4>A.Rudiger</h4>
+    </div>
+
+</body>
+
+</html>
